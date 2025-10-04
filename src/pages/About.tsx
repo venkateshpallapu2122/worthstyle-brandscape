@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { CheckCircle2 } from "lucide-react";
 import aboutImage from "@/assets/about-team.jpg";
+import athleisureLifestyle from "@/assets/athleisure-lifestyle.jpg";
 
 const About = () => {
   const values = [
@@ -45,7 +46,7 @@ const About = () => {
                 About Worthstyle
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground">
-                Redefining fashion and lifestyle excellence through innovation, trust, and an unwavering commitment to quality.
+                Redefining athleisure excellence through innovation, performance, and an unwavering commitment to quality and style.
               </p>
             </div>
           </div>
@@ -60,13 +61,13 @@ const About = () => {
                   Our Story
                 </h2>
                 <p className="text-lg text-muted-foreground mb-4">
-                  Founded in 2015, Worthstyle emerged from a simple yet powerful vision: to create a fashion brand that seamlessly blends style, quality, and accessibility.
+                  Founded in 2015, Worthstyle emerged from a simple yet powerful vision: to create an athleisure brand that seamlessly blends performance, style, and everyday comfort.
                 </p>
                 <p className="text-lg text-muted-foreground mb-4">
-                  What started as a small team passionate about fashion has grown into a global brand serving customers in over 50 countries. Our journey has been marked by continuous innovation, unwavering commitment to quality, and a deep understanding of our customers' evolving needs.
+                  What started as a small team passionate about active lifestyles has grown into a global athleisure brand serving customers in over 50 countries. Our journey has been marked by continuous innovation in fabric technology, unwavering commitment to quality, and a deep understanding of modern, active living.
                 </p>
                 <p className="text-lg text-muted-foreground">
-                  Today, Worthstyle stands at the forefront of fashion and lifestyle excellence, setting new standards in the industry and inspiring others to follow.
+                  Today, Worthstyle stands at the forefront of athleisure excellence, creating versatile pieces that transition effortlessly from workout to everyday life, setting new standards in the industry.
                 </p>
               </div>
               <div className="animate-scale-in">

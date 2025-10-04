@@ -8,30 +8,30 @@ const Testimonials = () => {
   const testimonials = [
     {
       name: "Sarah Johnson",
-      position: "Fashion Director, Vogue",
-      company: "Vogue Magazine",
-      text: "Worthstyle has redefined what premium fashion means. Their attention to detail and commitment to quality is unmatched in the industry.",
+      position: "Fitness Influencer",
+      company: "@FitWithSarah",
+      text: "Worthstyle athleisure is my go-to for everything - workouts, errands, meetings. The quality and style are unmatched. These pieces truly perform.",
       rating: 5
     },
     {
       name: "Michael Chen",
-      position: "CEO, StyleHub",
-      company: "StyleHub Inc.",
-      text: "Working with Worthstyle has been transformative for our business. Their innovative approach to fashion retail sets them apart.",
+      position: "Yoga Studio Owner",
+      company: "Urban Flow Yoga",
+      text: "We exclusively stock Worthstyle for our retail section. The comfort, durability, and style resonate perfectly with our community's needs.",
       rating: 5
     },
     {
       name: "Emma Williams",
-      position: "Brand Manager, Luxe Collective",
-      company: "Luxe Collective",
-      text: "The level of professionalism and style expertise Worthstyle brings is extraordinary. They truly understand modern fashion needs.",
+      position: "Corporate Wellness Director",
+      company: "TechCorp Inc.",
+      text: "Worthstyle perfectly bridges the gap between professional and active. Our team loves the versatility - office to gym seamlessly.",
       rating: 5
     },
     {
       name: "David Martinez",
-      position: "Fashion Buyer, Elite Stores",
-      company: "Elite Stores",
-      text: "Worthstyle's collection speaks for itself. Quality, style, and innovation perfectly combined in every piece.",
+      position: "Marathon Runner",
+      company: "Elite Athletics",
+      text: "Finally, athleisure that performs like activewear and looks like premium fashion. Worthstyle gets it right on both fronts.",
       rating: 5
     }
   ];

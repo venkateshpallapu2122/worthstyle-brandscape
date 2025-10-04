@@ -19,13 +19,13 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-32">
         <div className="max-w-3xl animate-fade-in-up">
           <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-            Where Style Meets
+            Premium Athleisure
             <span className="block bg-gradient-gold bg-clip-text text-transparent">
-              Excellence
+              For Every Move
             </span>
           </h1>
           <p className="text-lg sm:text-xl text-primary-foreground/90 mb-8 max-w-2xl">
-            Discover the future of fashion with Worthstyle - a premium lifestyle brand committed to innovation, quality, and timeless elegance.
+            Elevate your everyday with Worthstyle - where performance meets style. Premium athleisure designed for the modern lifestyle.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button

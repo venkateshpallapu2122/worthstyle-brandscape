@@ -12,7 +12,7 @@ const Footer = () => {
               Worthstyle
             </h3>
             <p className="text-sm opacity-80">
-              Redefining fashion and lifestyle excellence through innovation, quality, and style.
+              Premium athleisure for the modern lifestyle. Where performance meets style, comfort meets confidence.
             </p>
             <div className="flex space-x-4">
               <a
