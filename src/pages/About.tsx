@@ -43,7 +43,7 @@ const About = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
               <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-                About Worthstyle
+                About WORTHSTYLE
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground">
                 Redefining athleisure excellence through innovation, performance, and an unwavering commitment to quality and style.
