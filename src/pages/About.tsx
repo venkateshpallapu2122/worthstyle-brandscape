@@ -46,7 +46,7 @@ const About = () => {
                 About WORTHSTYLE
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground">
-                Redefining athleisure excellence through innovation, performance, and an unwavering commitment to quality and style.
+                {/* Redefining athleisure excellence through innovation, performance, and an unwavering commitment to quality and style. */}
               </p>
             </div>
           </div>
