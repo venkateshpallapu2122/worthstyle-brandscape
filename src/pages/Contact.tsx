@@ -70,9 +70,9 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold mb-1">Address</h3>
                         <p className="text-muted-foreground">
-                          123 Fashion Avenue<br />
-                          Style District, NY 10001<br />
-                          United States
+                          3rd Floor, Sreshta Marvel, Sy.No.136,<br />
+                          Gachibowli Kondapur Main Road,<br />
+                          Gachibowli, Hyderabad, Telangana – 500032
                         </p>
                       </div>
                     </div>
@@ -84,7 +84,7 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold mb-1">Phone</h3>
                         <p className="text-muted-foreground">
-                          +1 (555) 123-4567
+                          +91 83677 84677
                         </p>
                       </div>
                     </div>
@@ -96,7 +96,7 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold mb-1">Email</h3>
                         <p className="text-muted-foreground">
-                          info@worthstyle.com
+                          info@worthstyle.in
                         </p>
                       </div>
                     </div>
@@ -109,7 +109,7 @@ const Contact = () => {
                   </h3>
                   <div className="flex space-x-4">
                     <a
-                      href="https://instagram.com"
+                      href="https://www.instagram.com/worthstyleofficial/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center hover:bg-accent hover:text-primary transition-smooth"
@@ -117,7 +117,7 @@ const Contact = () => {
                       <Instagram size={20} />
                     </a>
                     <a
-                      href="https://linkedin.com"
+                      href="https://www.linkedin.com/company/worthstyle/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center hover:bg-accent hover:text-primary transition-smooth"

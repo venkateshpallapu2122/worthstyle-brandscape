@@ -5,73 +5,73 @@ import { Award, TrendingUp, Users, Star } from "lucide-react";
 const Achievements = () => {
   const awards = [
     {
-      title: "Best Fashion Brand 2023",
-      organization: "Global Fashion Awards",
-      year: "2023",
-      description: "Recognized for excellence in design and customer satisfaction"
+      title: "OEKO-TEX® STANDARD 100",
+      organization: "OEKO-TEX International",
+      year: "2018",
+      description: "All fabrics tested for harmful substances and certified safe for human skin contact"
     },
     {
-      title: "Sustainability Leader",
+      title: "GOTS Certification",
+      organization: "Global Organic Textile Standard",
+      year: "2020",
+      description: "Certified organic production, ethical labor practices, and environmentally responsible manufacturing"
+    },
+    {
+      title: "Sustainable B2B Partner Award",
       organization: "Green Fashion Council",
       year: "2023",
-      description: "Leading the industry in sustainable and ethical practices"
+      description: "Leading B2B manufacturer in sustainable and ethical athleisure practices"
     },
     {
-      title: "Innovation Excellence Award",
-      organization: "Tech Fashion Summit",
+      title: "Eco-Innovation Excellence",
+      organization: "Sustainable Textile Alliance",
+      year: "2023",
+      description: "Pioneering use of organic cotton, bamboo, hemp & TENCEL™ in athleisure"
+    },
+    {
+      title: "Zero Harmful Chemicals",
+      organization: "Environmental Safety Board",
       year: "2022",
-      description: "Pioneering technology integration in fashion retail"
+      description: "100% elimination of harmful substances in production process"
     },
     {
-      title: "Customer Choice Award",
-      organization: "Fashion Retail Association",
+      title: "Ethical Manufacturing Award",
+      organization: "Fair Trade Federation",
       year: "2022",
-      description: "Highest customer satisfaction rating in the industry"
-    },
-    {
-      title: "E-commerce Excellence",
-      organization: "Digital Commerce Awards",
-      year: "2021",
-      description: "Outstanding digital shopping experience and innovation"
-    },
-    {
-      title: "Fastest Growing Brand",
-      organization: "Business Fashion Magazine",
-      year: "2021",
-      description: "Exceptional growth and market expansion"
+      description: "Recognized for ethical labor practices and fair wage standards"
     }
   ];
 
   const achievements = [
     {
       icon: Users,
-      title: "500K+ Happy Customers",
-      description: "Building lasting relationships with fashion enthusiasts worldwide"
+      title: "100+ B2B Partners",
+      description: "Building lasting partnerships with sustainable businesses worldwide"
     },
     {
       icon: TrendingUp,
-      title: "300% Revenue Growth",
-      description: "Consistent year-over-year growth since inception"
+      title: "100% Eco-Certified",
+      description: "All materials OEKO-TEX® & GOTS certified for sustainability"
     },
     {
       icon: Star,
-      title: "4.9/5 Customer Rating",
-      description: "Maintaining exceptional quality and service standards"
+      title: "Zero Harmful Chemicals",
+      description: "Maintaining exceptional safety and environmental standards"
     },
     {
       icon: Award,
-      title: "25+ Industry Awards",
-      description: "Recognition from leading fashion and business organizations"
+      title: "2 Global Certifications",
+      description: "Recognition from leading environmental and textile organizations"
     }
   ];
 
   const partners = [
-    "Vogue Magazine",
-    "Fashion Week International",
-    "StyleHub Inc.",
-    "Luxe Collective",
-    "Elite Stores",
-    "Global Fashion Federation"
+    "OEKO-TEX International",
+    "Global Organic Textile",
+    "Sustainable Alliance",
+    "Fair Trade Federation",
+    "Green Fashion Council",
+    "Eco Textile Network"
   ];
 
   return (
@@ -84,10 +84,10 @@ const Achievements = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center text-primary-foreground animate-fade-in-up">
               <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-                Our Achievements
+                Certifications & Impact
               </h1>
               <p className="text-lg sm:text-xl opacity-90">
-                Celebrating milestones and recognition that reflect our commitment to excellence
+                Our commitment to sustainable excellence recognized by global certification bodies
               </p>
             </div>
           </div>
@@ -98,10 +98,10 @@ const Achievements = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="font-heading text-3xl sm:text-4xl font-bold mb-4">
-                Key Milestones
+                Sustainability Milestones
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Numbers that showcase our growth and impact
+                Metrics that showcase our environmental commitment and impact
               </p>
             </div>
 
@@ -135,10 +135,10 @@ const Achievements = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="font-heading text-3xl sm:text-4xl font-bold mb-4">
-                Awards & Recognition
+                Certifications & Recognition
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Honored by leading organizations in fashion and business
+                Certified by leading global organizations in sustainability and textiles
               </p>
             </div>
 
@@ -175,10 +175,10 @@ const Achievements = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="font-heading text-3xl sm:text-4xl font-bold mb-4">
-                Trusted Partners
+                Certification Partners
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Collaborating with industry leaders to deliver excellence
+                Collaborating with global leaders in sustainable textile standards
               </p>
             </div>
 

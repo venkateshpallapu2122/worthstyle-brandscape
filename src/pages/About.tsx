@@ -8,29 +8,29 @@ const About = () => {
   const values = [
     {
       title: "Innovation",
-      description: "Constantly pushing boundaries to deliver cutting-edge fashion solutions"
+      description: "Pioneering sustainable fabric technology and eco-conscious design solutions"
     },
     {
       title: "Quality",
-      description: "Uncompromising commitment to excellence in every product we create"
+      description: "OEKO-TEX® & GOTS certified excellence in every sustainable product"
     },
     {
       title: "Sustainability",
-      description: "Building a better future through responsible and ethical practices"
+      description: "100% eco-friendly materials protecting people and planet"
     },
     {
-      title: "Customer First",
-      description: "Your satisfaction and style aspirations drive everything we do"
+      title: "Partnership",
+      description: "Empowering B2B partners with reliable sustainable athleisure solutions"
     }
   ];
 
   const milestones = [
     { year: "2015", event: "Worthstyle Founded" },
-    { year: "2017", event: "Reached 100K Customers" },
-    { year: "2019", event: "Expanded to 25 Countries" },
-    { year: "2021", event: "Launched Sustainability Initiative" },
-    { year: "2023", event: "Awarded Best Fashion Brand" },
-    { year: "2024", event: "1M+ Products Sold" }
+    { year: "2018", event: "OEKO-TEX® Certification Achieved" },
+    { year: "2020", event: "GOTS Certification Obtained" },
+    { year: "2021", event: "100% Eco-Friendly Material Transition" },
+    { year: "2023", event: "Expanded B2B Global Partnerships" },
+    { year: "2024", event: "Leading Sustainable Athleisure Manufacturer" }
   ];
 
   return (
@@ -43,10 +43,10 @@ const About = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
               <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-                {/* About Worthstyle */}
+                About Worthstyle
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground">
-                Redefining athleisure excellence through innovation, performance, and an unwavering commitment to quality and style.
+                Redefining sustainable athleisure through innovation, eco-conscious materials, and an unwavering commitment to quality and environmental responsibility.
               </p>
             </div>
           </div>
@@ -61,13 +61,13 @@ const About = () => {
                   Our Story
                 </h2>
                 <p className="text-lg text-muted-foreground mb-4">
-                  Founded in 2015, Worthstyle emerged from a simple yet powerful vision: to create an athleisure brand that seamlessly blends performance, style, and everyday comfort.
+                  Founded in 2015, Worthstyle emerged from a simple yet powerful vision: to create an athleisure brand that seamlessly blends performance, style, and environmental responsibility.
                 </p>
                 <p className="text-lg text-muted-foreground mb-4">
-                  What started as a small team passionate about active lifestyles has grown into a global athleisure brand serving customers in over 50 countries. Our journey has been marked by continuous innovation in fabric technology, unwavering commitment to quality, and a deep understanding of modern, active living.
+                  What started as a small team passionate about sustainable active lifestyles has grown into a certified eco-friendly athleisure manufacturer serving B2B partners globally. Our journey has been marked by continuous innovation in sustainable fabric technology, OEKO-TEX® and GOTS certifications, and a deep commitment to planet-conscious production.
                 </p>
                 <p className="text-lg text-muted-foreground">
-                  Today, Worthstyle stands at the forefront of athleisure excellence, creating versatile pieces that transition effortlessly from workout to everyday life, setting new standards in the industry.
+                  Today, Worthstyle stands at the forefront of sustainable athleisure excellence, creating versatile pieces from organic cotton, bamboo, hemp, and TENCEL™ that transition effortlessly from workout to everyday life while protecting our planet.
                 </p>
               </div>
               <div className="animate-scale-in">

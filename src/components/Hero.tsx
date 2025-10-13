@@ -18,29 +18,34 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-32">
         <div className="max-w-3xl animate-fade-in-up">
+          <div className="mb-4">
+            <span className="eco-badge">🌱 OEKO-TEX® & GOTS Certified</span>
+          </div>
           <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-            Premium Athleisure
+            Sustainable Athleisure
             <span className="block bg-gradient-gold bg-clip-text text-transparent">
-              For Every Move
+              For Conscious Living
             </span>
           </h1>
           <p className="text-lg sm:text-xl text-primary-foreground/90 mb-8 max-w-2xl">
-            Elevate your everyday with Worthstyle - where performance meets style. Premium athleisure designed for the modern lifestyle.
+            Premium eco-friendly athleisure crafted from organic cotton, bamboo, hemp & TENCEL™. Performance meets planet-conscious design for B2B partners.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button
               size="lg"
-              className="gradient-gold hover:opacity-90 transition-smooth text-primary font-semibold shadow-gold"
+              className="gradient-eco hover:opacity-90 transition-smooth text-white font-semibold shadow-eco"
+              onClick={() => window.location.href = '/contact'}
             >
-              Explore Collection
+              Partner With Us
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-smooth"
+              onClick={() => window.location.href = '/about'}
             >
-              Learn More
+              Our Sustainability Story
             </Button>
           </div>
         </div>

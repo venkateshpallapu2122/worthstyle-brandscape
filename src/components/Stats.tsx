@@ -25,15 +25,15 @@ const Stats = () => {
   const stats = [
     {
       icon: Users,
-      value: "500K+",
-      label: "Happy Customers",
+      value: "100+",
+      label: "B2B Partners",
       color: "text-accent"
     },
     {
       icon: ShoppingBag,
-      value: "1M+",
-      label: "Products Sold",
-      color: "text-accent"
+      value: "100%",
+      label: "Eco-Certified Materials",
+      color: "text-green-600"
     },
     {
       icon: Globe,
@@ -43,9 +43,9 @@ const Stats = () => {
     },
     {
       icon: Award,
-      value: "25+",
-      label: "Industry Awards",
-      color: "text-accent"
+      value: "2",
+      label: "Global Certifications",
+      color: "text-green-600"
     }
   ];
 
@@ -54,10 +54,10 @@ const Stats = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-            Trusted by Active Lifestyles
+            Certified Sustainable Excellence
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Our commitment to quality athleisure has made us the preferred choice for modern, active individuals
+            Our commitment to eco-friendly manufacturing has earned global certifications and B2B partnerships worldwide
           </p>
         </div>
 

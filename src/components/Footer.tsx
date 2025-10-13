@@ -12,11 +12,11 @@ const Footer = () => {
               Worthstyle
             </h3>
             <p className="text-sm opacity-80">
-              Premium athleisure for the modern lifestyle. Where performance meets style, comfort meets confidence.
+              Sustainable premium athleisure crafted with certified eco-friendly materials. Performance meets planet-conscious design.
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/worthstyleofficial/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-accent transition-smooth"
@@ -25,7 +25,7 @@ const Footer = () => {
                 <Instagram size={20} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/worthstyle/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-accent transition-smooth"
@@ -34,7 +34,7 @@ const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href="mailto:info@worthstyle.com"
+                href="mailto:info@worthstyle.in"
                 className="hover:text-accent transition-smooth"
                 aria-label="Email"
               >
@@ -103,15 +103,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3 text-sm opacity-80">
                 <MapPin size={16} className="mt-1 flex-shrink-0" />
-                <span>123 Fashion Avenue, Style District, NY 10001</span>
+                <span>3rd Floor, Sreshta Marvel, Sy.No.136, Gachibowli Kondapur Main Road, Gachibowli, Hyderabad, Telangana – 500032</span>
               </li>
               <li className="flex items-center space-x-3 text-sm opacity-80">
                 <Phone size={16} className="flex-shrink-0" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 83677 84677</span>
               </li>
               <li className="flex items-center space-x-3 text-sm opacity-80">
                 <Mail size={16} className="flex-shrink-0" />
-                <span>info@worthstyle.com</span>
+                <span>info@worthstyle.in</span>
               </li>
             </ul>
           </div>
