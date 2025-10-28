@@ -4,8 +4,11 @@ import workoutStyle from "@/assets/workout-style.jpg";
 import streetAthleisure from "@/assets/street-athleisure.jpg";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const FeaturedProducts = () => {
+  const navigate = useNavigate();
+  
   const categories = [
     {
       title: "Active Collection",
@@ -51,6 +54,7 @@ const FeaturedProducts = () => {
               key={index}
               className="group relative overflow-hidden rounded-2xl shadow-soft hover:shadow-medium transition-all duration-500 animate-fade-in cursor-pointer"
               style={{ animationDelay: `${category.delay}ms` }}
+              onClick={() => navigate('/contact')}
             >
               <div className="aspect-[3/4] relative">
                 <img
@@ -81,6 +85,7 @@ const FeaturedProducts = () => {
           <Button
             size="lg"
             className="gradient-gold hover:opacity-90 transition-smooth text-primary font-semibold shadow-gold"
+            onClick={() => navigate('/contact')}
           >
             View All Collections
             <ArrowRight className="ml-2 h-5 w-5" />

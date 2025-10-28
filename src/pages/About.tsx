@@ -1,8 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { CheckCircle2 } from "lucide-react";
-import aboutImage from "@/assets/about-team.jpg";
-import athleisureLifestyle from "@/assets/athleisure-lifestyle.jpg";
+import aboutTeam from "@/assets/about-team.jpg";
 
 const About = () => {
   const values = [
@@ -72,8 +71,8 @@ const About = () => {
               </div>
               <div className="animate-scale-in">
                 <img
-                  src={aboutImage}
-                  alt="Our Team"
+                  src={aboutTeam}
+                  alt="Worthstyle Sustainable Athleisure Team"
                   className="rounded-2xl shadow-medium w-full"
                 />
               </div>

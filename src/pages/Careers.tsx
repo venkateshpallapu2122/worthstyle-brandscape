@@ -78,6 +78,7 @@ const Careers = () => {
               <Button
                 size="lg"
                 className="gradient-gold hover:opacity-90 transition-smooth text-primary font-semibold shadow-gold"
+                onClick={() => document.getElementById('open-positions')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 View Open Positions
               </Button>
@@ -166,7 +167,7 @@ const Careers = () => {
         </section>
 
         {/* Open Positions */}
-        <section className="py-20">
+        <section id="open-positions" className="py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
@@ -207,6 +208,7 @@ const Careers = () => {
                       </div>
                       <Button
                         className="gradient-gold hover:opacity-90 transition-smooth mt-4 lg:mt-0"
+                        onClick={() => window.location.href = '/contact'}
                       >
                         Apply Now
                       </Button>
