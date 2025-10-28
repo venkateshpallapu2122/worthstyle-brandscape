@@ -8,44 +8,44 @@ const Careers = () => {
     {
       title: "Senior Fashion Designer",
       department: "Design",
-      location: "New York, NY",
+      location: "Hyderabad, India",
       type: "Full-time",
-      description: "Lead design initiatives and create innovative fashion collections that define trends."
+      description: "Lead design initiatives and create innovative sustainable athleisure collections that define eco-conscious trends."
     },
     {
       title: "E-commerce Manager",
       department: "Digital",
-      location: "Remote",
+      location: "Bangalore, India",
       type: "Full-time",
-      description: "Drive online growth strategy and optimize customer shopping experience."
+      description: "Drive online growth strategy and optimize B2B customer shopping experience."
     },
     {
       title: "Brand Marketing Specialist",
       department: "Marketing",
-      location: "Los Angeles, CA",
+      location: "Mumbai, India",
       type: "Full-time",
-      description: "Develop and execute marketing campaigns that elevate brand presence."
+      description: "Develop and execute marketing campaigns that elevate sustainable athleisure brand presence."
     },
     {
       title: "Product Manager",
       department: "Product",
-      location: "San Francisco, CA",
+      location: "Hyderabad, India",
       type: "Full-time",
-      description: "Define product strategy and work cross-functionally to deliver exceptional results."
+      description: "Define eco-friendly product strategy and work cross-functionally to deliver exceptional sustainable results."
     },
     {
       title: "Customer Experience Lead",
       department: "Customer Success",
-      location: "Remote",
+      location: "Delhi, India",
       type: "Full-time",
-      description: "Champion customer satisfaction and build lasting relationships."
+      description: "Champion B2B customer satisfaction and build lasting partnerships with sustainable brands."
     },
     {
       title: "Supply Chain Analyst",
       department: "Operations",
-      location: "Chicago, IL",
+      location: "Chennai, India",
       type: "Full-time",
-      description: "Optimize supply chain operations and ensure seamless delivery."
+      description: "Optimize eco-friendly supply chain operations and ensure seamless sustainable delivery."
     }
   ];
 

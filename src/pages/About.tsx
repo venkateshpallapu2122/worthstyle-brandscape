@@ -24,12 +24,12 @@ const About = () => {
   ];
 
   const milestones = [
-    { year: "2015", event: "Worthstyle Founded" },
-    { year: "2018", event: "OEKO-TEX® Certification Achieved" },
-    { year: "2020", event: "GOTS Certification Obtained" },
-    { year: "2021", event: "100% Eco-Friendly Material Transition" },
-    { year: "2023", event: "Expanded B2B Global Partnerships" },
-    { year: "2024", event: "Leading Sustainable Athleisure Manufacturer" }
+    { year: "2024", event: "Worthstyle Founded" },
+    { year: "2024", event: "OEKO-TEX® Certification Achieved" },
+    { year: "2024", event: "GOTS Certification Obtained" },
+    { year: "2024", event: "100% Eco-Friendly Material Transition" },
+    { year: "2024", event: "Expanded B2B Global Partnerships" },
+    { year: "2025", event: "Leading Sustainable Athleisure Manufacturer" }
   ];
 
   return (
@@ -60,10 +60,10 @@ const About = () => {
                   Our Story
                 </h2>
                 <p className="text-lg text-muted-foreground mb-4">
-                  Founded in 2015, Worthstyle emerged from a simple yet powerful vision: to create an athleisure brand that seamlessly blends performance, style, and environmental responsibility.
+                  Founded in 2024, Worthstyle emerged from a simple yet powerful vision: to create an athleisure brand that seamlessly blends performance, style, and environmental responsibility.
                 </p>
                 <p className="text-lg text-muted-foreground mb-4">
-                  What started as a small team passionate about sustainable active lifestyles has grown into a certified eco-friendly athleisure manufacturer serving B2B partners globally. Our journey has been marked by continuous innovation in sustainable fabric technology, OEKO-TEX® and GOTS certifications, and a deep commitment to planet-conscious production.
+                  As a passionate team committed to sustainable active lifestyles, we've rapidly grown into a certified eco-friendly athleisure manufacturer serving B2B partners globally. Our journey has been marked by continuous innovation in sustainable fabric technology, OEKO-TEX® and GOTS certifications, and a deep commitment to planet-conscious production.
                 </p>
                 <p className="text-lg text-muted-foreground">
                   Today, Worthstyle stands at the forefront of sustainable athleisure excellence, creating versatile pieces from organic cotton, bamboo, hemp, and TENCEL™ that transition effortlessly from workout to everyday life while protecting our planet.
