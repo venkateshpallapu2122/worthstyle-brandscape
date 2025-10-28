@@ -7,37 +7,37 @@ const Achievements = () => {
     {
       title: "OEKO-TEX® STANDARD 100",
       organization: "OEKO-TEX International",
-      year: "2018",
+      year: "2024",
       description: "All fabrics tested for harmful substances and certified safe for human skin contact"
     },
     {
       title: "GOTS Certification",
       organization: "Global Organic Textile Standard",
-      year: "2020",
+      year: "2024",
       description: "Certified organic production, ethical labor practices, and environmentally responsible manufacturing"
     },
     {
       title: "Sustainable B2B Partner Award",
       organization: "Green Fashion Council",
-      year: "2023",
+      year: "2024",
       description: "Leading B2B manufacturer in sustainable and ethical athleisure practices"
     },
     {
       title: "Eco-Innovation Excellence",
       organization: "Sustainable Textile Alliance",
-      year: "2023",
+      year: "2024",
       description: "Pioneering use of organic cotton, bamboo, hemp & TENCEL™ in athleisure"
     },
     {
       title: "Zero Harmful Chemicals",
       organization: "Environmental Safety Board",
-      year: "2022",
+      year: "2024",
       description: "100% elimination of harmful substances in production process"
     },
     {
       title: "Ethical Manufacturing Award",
       organization: "Fair Trade Federation",
-      year: "2022",
+      year: "2024",
       description: "Recognized for ethical labor practices and fair wage standards"
     }
   ];
