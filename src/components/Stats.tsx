@@ -50,7 +50,7 @@ const Stats = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="py-20 bg-eco-soft/40">
+    <section ref={sectionRef} className="py-20 bg-accent/5">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
