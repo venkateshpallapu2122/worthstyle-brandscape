@@ -130,6 +130,24 @@ All colors MUST be HSL.
     font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 600;
   }
+
+  /* Fix text selection appearance */
+  ::selection {
+    background-color: hsl(var(--accent) / 0.3);
+    color: inherit;
+  }
+
+  ::-moz-selection {
+    background-color: hsl(var(--accent) / 0.3);
+    color: inherit;
+  }
+
+  /* Ensure text doesn't appear pre-selected */
+  * {
+    user-select: text;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+  }
 }
 
 @layer utilities {

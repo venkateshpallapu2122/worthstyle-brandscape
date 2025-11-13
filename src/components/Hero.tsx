@@ -23,7 +23,7 @@ const Hero = () => {
           </div>
           <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
             Sustainable Athleisure
-            <span className="block bg-gradient-gold bg-clip-text text-transparent">
+            <span className="block text-accent">
               For Conscious Living
             </span>
           </h1>
