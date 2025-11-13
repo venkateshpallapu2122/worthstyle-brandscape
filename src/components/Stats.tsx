@@ -53,10 +53,10 @@ const Stats = () => {
     <section ref={sectionRef} className="py-20 bg-accent/5">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
             Certified Sustainable Excellence
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
             Our commitment to eco-friendly manufacturing has earned global certifications and B2B partnerships worldwide
           </p>
         </div>
@@ -75,10 +75,10 @@ const Stats = () => {
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 mb-6">
                   <Icon className={`h-8 w-8 ${stat.color}`} />
                 </div>
-                <div className="font-heading text-4xl font-bold mb-2">
+                <div className="font-heading text-4xl font-bold mb-2 text-foreground">
                   {stat.value}
                 </div>
-                <div className="text-muted-foreground font-medium">
+                <div className="text-foreground/70 font-medium">
                   {stat.label}
                 </div>
               </div>
