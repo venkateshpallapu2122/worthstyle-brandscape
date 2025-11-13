@@ -54,8 +54,8 @@ const Navigation = () => {
                 to={link.path}
                 className={`text-sm font-medium transition-smooth relative group ${
                   isActive(link.path)
-                    ? "text-accent"
-                    : "text-foreground hover:text-accent"
+                    ? isScrolled ? "text-accent" : "text-accent"
+                    : isScrolled ? "text-foreground hover:text-accent" : "text-white hover:text-accent"
                 }`}
               >
                 {link.name}
@@ -73,7 +73,7 @@ const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-foreground"
+            className={`md:hidden transition-smooth ${isScrolled ? "text-foreground" : "text-white"}`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
