@@ -3,6 +3,7 @@ import { Award, Globe, ShoppingBag, Users } from "lucide-react";
 
 const Stats = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [counts, setCounts] = useState({ partners: 0, eco: 0, countries: 0, certifications: 0 });
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -22,28 +23,59 @@ const Stats = () => {
     return () => observer.disconnect();
   }, []);
 
+  // Animated counter effect
+  useEffect(() => {
+    if (!isVisible) return;
+
+    const duration = 2000; // 2 seconds
+    const targets = { partners: 100, eco: 100, countries: 50, certifications: 2 };
+    const startTime = Date.now();
+
+    const animate = () => {
+      const elapsed = Date.now() - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+
+      // Easing function for smooth animation
+      const easeOutQuad = (t: number) => t * (2 - t);
+      const easedProgress = easeOutQuad(progress);
+
+      setCounts({
+        partners: Math.floor(targets.partners * easedProgress),
+        eco: Math.floor(targets.eco * easedProgress),
+        countries: Math.floor(targets.countries * easedProgress),
+        certifications: Math.floor(targets.certifications * easedProgress),
+      });
+
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      }
+    };
+
+    animate();
+  }, [isVisible]);
+
   const stats = [
     {
       icon: Users,
-      value: "100+",
+      value: `${counts.partners}+`,
       label: "B2B Partners",
       color: "text-accent"
     },
     {
       icon: ShoppingBag,
-      value: "100%",
+      value: `${counts.eco}%`,
       label: "Eco-Certified Materials",
       color: "text-green-600"
     },
     {
       icon: Globe,
-      value: "50+",
+      value: `${counts.countries}+`,
       label: "Countries Served",
       color: "text-accent"
     },
     {
       icon: Award,
-      value: "2",
+      value: `${counts.certifications}`,
       label: "Global Certifications",
       color: "text-green-600"
     }
