@@ -1,7 +1,27 @@
+import { useState, useEffect, useRef } from "react";
 import { Leaf, Award, Recycle, Heart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const Sustainability = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
   const materials = [
     "100% Cotton",
     "Cotton Fleece (Premium Grade)",
@@ -38,9 +58,9 @@ const Sustainability = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted/30">
+    <section ref={sectionRef} className="py-20 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-fade-in-up">
+        <div className={`text-center mb-16 transition-all duration-700 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
           <div className="inline-flex items-center gap-2 mb-4">
             <Leaf className="h-8 w-8 text-green-600" />
             <span className="eco-badge">Our Commitment to Planet Earth</span>
@@ -57,7 +77,13 @@ const Sustainability = () => {
         {/* Certifications */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {certifications.map((cert, index) => (
-            <Card key={index} className="border-2 border-green-200 shadow-eco animate-scale-in hover:shadow-xl transition-smooth">
+            <Card 
+              key={index} 
+              className={`border-2 border-green-200 shadow-eco hover:shadow-xl transition-smooth ${
+                isVisible ? 'animate-scale-in' : 'opacity-0'
+              }`}
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
               <CardContent className="p-8">
                 <cert.icon className="h-16 w-16 text-green-600 mb-4" />
                 <h3 className="font-heading text-2xl font-bold mb-3">{cert.title}</h3>
@@ -68,7 +94,7 @@ const Sustainability = () => {
         </div>
 
         {/* Eco-Friendly Materials */}
-        <div className="bg-card rounded-2xl p-8 sm:p-12 shadow-medium mb-16 animate-fade-in">
+        <div className={`bg-card rounded-2xl p-8 sm:p-12 shadow-medium mb-16 transition-all duration-700 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`} style={{ animationDelay: '200ms' }}>
           <h3 className="font-heading text-2xl font-bold mb-6 text-center">
             Eco-Friendly Materials We Use
           </h3>
@@ -88,7 +114,13 @@ const Sustainability = () => {
         {/* Sustainability Commitments */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {commitments.map((commitment, index) => (
-            <Card key={index} className="shadow-soft hover:shadow-medium transition-smooth animate-fade-in">
+            <Card 
+              key={index} 
+              className={`shadow-soft hover:shadow-medium transition-smooth ${
+                isVisible ? 'animate-scale-in' : 'opacity-0'
+              }`}
+              style={{ animationDelay: `${300 + index * 100}ms` }}
+            >
               <CardContent className="p-8">
                 <commitment.icon className="h-12 w-12 text-green-600 mb-4" />
                 <h3 className="font-heading text-xl font-bold mb-3">{commitment.title}</h3>

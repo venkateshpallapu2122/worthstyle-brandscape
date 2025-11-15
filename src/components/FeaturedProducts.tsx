@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef } from "react";
 import athleisureLifestyle from "@/assets/athleisure-lifestyle.jpg";
 import productCollection from "@/assets/product-collection.jpg";
 import workoutStyle from "@/assets/workout-style.jpg";
@@ -8,6 +9,25 @@ import { useNavigate } from "react-router-dom";
 
 const FeaturedProducts = () => {
   const navigate = useNavigate();
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
   
   const categories = [
     {
@@ -37,9 +57,9 @@ const FeaturedProducts = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section ref={sectionRef} className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className={`text-center mb-16 transition-all duration-700 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
             Shop by Category
           </h2>
@@ -52,7 +72,9 @@ const FeaturedProducts = () => {
           {categories.map((category, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl shadow-soft hover:shadow-medium transition-all duration-500 animate-fade-in cursor-pointer"
+              className={`group relative overflow-hidden rounded-2xl shadow-soft hover:shadow-medium transition-all duration-500 cursor-pointer ${
+                isVisible ? 'animate-scale-in' : 'opacity-0'
+              }`}
               style={{ animationDelay: `${category.delay}ms` }}
               onClick={() => navigate('/contact')}
             >
@@ -81,10 +103,10 @@ const FeaturedProducts = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className={`text-center mt-12 transition-all duration-700 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`} style={{ animationDelay: '400ms' }}>
           <Button
             size="lg"
-            className="gradient-gold hover:opacity-90 transition-smooth text-primary font-semibold shadow-gold"
+            className="gradient-gold hover:opacity-90 transition-smooth text-primary font-semibold shadow-gold hover:scale-105"
             onClick={() => navigate('/contact')}
           >
             View All Collections
