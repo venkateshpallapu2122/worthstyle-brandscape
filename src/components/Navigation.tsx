@@ -27,6 +27,23 @@ const Navigation = () => {
 
   const isActive = (path: string) => location.pathname === path;
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
+    // If we're on home page and clicking home, scroll to top smoothly
+    if (location.pathname === "/" && path === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      setIsMobileMenuOpen(false);
+    }
+  };
+
+  // Add smooth scroll behavior globally
+  useEffect(() => {
+    document.documentElement.style.scrollBehavior = "smooth";
+    return () => {
+      document.documentElement.style.scrollBehavior = "auto";
+    };
+  }, []);
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -52,6 +69,7 @@ const Navigation = () => {
               <Link
                 key={link.path}
                 to={link.path}
+                onClick={(e) => handleNavClick(e, link.path)}
                 className={`text-sm font-medium transition-smooth relative group ${
                   isActive(link.path)
                     ? isScrolled ? "text-accent" : "text-accent"
@@ -89,7 +107,7 @@ const Navigation = () => {
                 <Link
                   key={link.path}
                   to={link.path}
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={(e) => handleNavClick(e, link.path)}
                   className={`text-sm font-medium py-2 transition-smooth ${
                     isActive(link.path)
                       ? "text-accent"
