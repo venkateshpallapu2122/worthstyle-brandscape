@@ -17,23 +17,23 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-32">
-        <div className="max-w-3xl animate-fade-in-up">
-          <div className="mb-4">
+        <div className="max-w-3xl">
+          <div className="mb-4 animate-fade-in">
             <span className="eco-badge">🌱 OEKO-TEX® & GOTS Certified</span>
           </div>
-          <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
+          <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight animate-fade-in" style={{ animationDelay: '200ms' }}>
             Sustainable Athleisure
             <span className="block text-accent">
               For Conscious Living
             </span>
           </h1>
-          <p className="text-lg sm:text-xl text-primary-foreground/90 mb-8 max-w-2xl">
+          <p className="text-lg sm:text-xl text-primary-foreground/90 mb-8 max-w-2xl animate-fade-in" style={{ animationDelay: '400ms' }}>
             Premium eco-friendly athleisure crafted from organic cotton, bamboo, hemp & TENCEL™. Performance meets planet-conscious design for B2B partners.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '600ms' }}>
             <Button
               size="lg"
-              className="gradient-eco hover:opacity-90 transition-smooth text-white font-semibold shadow-eco"
+              className="gradient-eco hover:opacity-90 transition-smooth text-white font-semibold shadow-eco hover:scale-105"
               onClick={() => window.location.href = '/contact'}
             >
               Partner With Us
@@ -42,7 +42,7 @@ const Hero = () => {
             <Button
               size="lg"
               variant="outline"
-              className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-smooth"
+              className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-smooth hover:scale-105"
               onClick={() => window.location.href = '/about'}
             >
               Our Sustainability Story
